@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Imprimir mensaje
-        run: echo "Hola Diego, este workflow se ejecutó correctamente 🎉"
+        run: echo "Hola Diego, este workflow se ejecutó correctamente en clase 🎉"
