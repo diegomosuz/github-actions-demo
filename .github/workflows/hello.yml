@@ -1,0 +1,17 @@
+name: Hello Actions
+
+on:
+  push:        # Se dispara en cualquier push
+    branches:
+      - main   # Solo si el push es a la rama main (puedes cambiarla)
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest   # Tipo de máquina donde se ejecuta
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Imprimir mensaje
+        run: echo "Hola Diego, este workflow se ejecutó correctamente 🎉"
